@@ -32,7 +32,7 @@ class UserController extends Controller
         //count of age segmentation
         $ages['firstSegment'] = $all->whereBetween('age', [0,20])->count(); // 0->20
         $ages['secondSegment'] = $all->whereBetween('age', [20,40])->count(); // 20->40
-        $ages['thirdSegment'] = $all->whereBetween('age', [40,60])->count(); // 40->60
+        $ages['thirdSegment'] = $all->whereBetween('age', [40,80])->count(); // 40->80
 
         //months creation
         $users = $all->groupBy(function($date) {
