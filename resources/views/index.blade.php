@@ -42,7 +42,6 @@
                                 <div class="form-group col-md-3">
                                     <label>User Data</label>
                                     <select name="filter[{{$loop->iteration}}][col]" class="form-control col">
-                                        <option selected>Choose...</option>
                                         <option value="id" @if($row['col'] == 'id') selected @endif>ID</option>
                                         <option value="first_name" @if($row['col'] == 'first_name') selected @endif>First Name</option>
                                         <option value="last_name" @if($row['col'] == 'last_name') selected @endif>Last Name</option>
@@ -56,7 +55,6 @@
                                 <div class="form-group col-md-3">
                                     <label>Operator</label>
                                     <select name="filter[{{$loop->iteration}}][operator]" class="form-control operator">
-                                        <option selected>Choose...</option>
                                         <option value="=" @if($row['operator'] == '=') selected @endif>=</option>
                                         <option value="!=" @if($row['operator'] == '!=') selected @endif>!=</option>
                                         <option value=">" @if($row['operator'] == '>') selected @endif> > </option>
@@ -90,7 +88,6 @@
                         <div class="form-group col-md-3">
                             <label>User Data</label>
                             <select name="filter[1][col]" class="form-control col">
-                                <option selected>Choose...</option>
                                 <option value="id">ID</option>
                                 <option value="first_name">First Name</option>
                                 <option value="last_name">Last Name</option>
@@ -104,7 +101,6 @@
                         <div class="form-group col-md-3">
                             <label>Operator</label>
                             <select name="filter[1][operator]" class="form-control operator">
-                                <option selected>Choose...</option>
                                 <option value="=">=</option>
                                 <option value="!=">!=</option>
                                 <option value=">"> > </option>
